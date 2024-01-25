@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-25T19:30:21 IST" name="Default suite" finished-at="2024-01-25T19:30:34 IST" duration-ms="12639">
+    <groups>
+    </groups>
+    <test started-at="2024-01-25T19:30:21 IST" name="Default test" finished-at="2024-01-25T19:30:34 IST" duration-ms="12639">
+      <class name="test.EstimateTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:21 IST" name="setUp" finished-at="2024-01-25T19:30:25 IST" duration-ms="3311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyEstimate()[pri:1, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:25 IST" name="verifyEstimate" finished-at="2024-01-25T19:30:29 IST" duration-ms="4225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEstimate -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:29 IST" name="afterMethod" finished-at="2024-01-25T19:30:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEstimate status=SUCCESS method=EstimateTest.verifyEstimate()[pri:1, instance:test.EstimateTest@25fb8912] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:29 IST" name="setUp" finished-at="2024-01-25T19:30:32 IST" duration-ms="3148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchEstimate()[pri:2, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:32 IST" name="searchEstimate" finished-at="2024-01-25T19:30:34 IST" duration-ms="1919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEstimate -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:34 IST" name="afterMethod" finished-at="2024-01-25T19:30:34 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchEstimate status=SUCCESS method=EstimateTest.searchEstimate()[pri:2, instance:test.EstimateTest@25fb8912] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.EstimateTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
