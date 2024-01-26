@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 23 23:04:42 IST 2024</td>
+<td>Started on:</td><td>Fri Jan 26 21:09:43 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65060 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56164 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.EstimateTest.verifyEstimate()'><b>verifyEstimate</b><br>Test class: test.EstimateTest</td>
+<td title='test.ProjectTest.deleteProject()'><b>deleteProject</b><br>Test class: test.ProjectTest</td>
 <td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=120.0.6099.225)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f2bc1dfa4c490f0a0e40bcfb33d2281b, clickElement {id=2F4A680C9EC656529C5395788D3BD406_element_12925}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\VEENAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60109/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f2bc1dfa4c490f0a0e40bcfb33d2281b)] -&gt; xpath: //button[@type=&apos;button&apos;]]
-Session ID: f2bc1dfa4c490f0a0e40bcfb33d2281b
+Command: [9035f355ed1c1ef242a025bc662b8a61, getElementText {id=3096A6BE1CD3CEC980A4359AC8936C5B_element_2366}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\VEENAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60931/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9035f355ed1c1ef242a025bc662b8a61)] -&gt; xpath: //table[@id=&apos;project-table&apos;]//tbody//tr[1]//td[1]]
+Session ID: 9035f355ed1c1ef242a025bc662b8a61
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -94,23 +94,23 @@ Session ID: f2bc1dfa4c490f0a0e40bcfb33d2281b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy20.click(Unknown Source)
-	at page.EstimatePage.doEstimate(EstimatePage.java:86)
-	at test.EstimateTest.verifyEstimate(EstimateTest.java:14)
+	at com.sun.proxy.$Proxy20.getText(Unknown Source)
+	at page.ProjectPage.dodelete(ProjectPage.java:158)
+	at test.ProjectTest.deleteProject(ProjectTest.java:69)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace471395945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace471395945'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1023620179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1023620179'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=120.0.6099.225)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f2bc1dfa4c490f0a0e40bcfb33d2281b, clickElement {id=2F4A680C9EC656529C5395788D3BD406_element_12925}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\VEENAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60109/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f2bc1dfa4c490f0a0e40bcfb33d2281b)] -&gt; xpath: //button[@type=&apos;button&apos;]]
-Session ID: f2bc1dfa4c490f0a0e40bcfb33d2281b
+Command: [9035f355ed1c1ef242a025bc662b8a61, getElementText {id=3096A6BE1CD3CEC980A4359AC8936C5B_element_2366}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\VEENAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60931/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9035f355ed1c1ef242a025bc662b8a61)] -&gt; xpath: //table[@id=&apos;project-table&apos;]//tbody//tr[1]//td[1]]
+Session ID: 9035f355ed1c1ef242a025bc662b8a61
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -123,14 +123,15 @@ Session ID: f2bc1dfa4c490f0a0e40bcfb33d2281b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy20.click(Unknown Source)
-	at page.EstimatePage.doEstimate(EstimatePage.java:86)
-	at test.EstimateTest.verifyEstimate(EstimateTest.java:14)
+	at com.sun.proxy.$Proxy20.getText(Unknown Source)
+	at page.ProjectPage.dodelete(ProjectPage.java:158)
+	at test.ProjectTest.deleteProject(ProjectTest.java:69)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,8 +161,8 @@ Session ID: f2bc1dfa4c490f0a0e40bcfb33d2281b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>4</td>
-<td>test.EstimateTest@1e461e41</td></tr>
+<td>3</td>
+<td>test.ProjectTest@1e461e41</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -171,50 +172,55 @@ Session ID: f2bc1dfa4c490f0a0e40bcfb33d2281b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.ProjectTest.search()'><b>search</b><br>Test class: test.ProjectTest</td>
+<td title='test.NoteTest.search()'><b>search</b><br>Test class: test.NoteTest</td>
+<td></td>
+<td>1</td>
+<td>test.NoteTest@4b41dd5c</td></tr>
+<tr>
+<td title='test.ProjectTest.verifyProject()'><b>verifyProject</b><br>Test class: test.ProjectTest</td>
 <td></td>
 <td>2</td>
-<td>test.ProjectTest@5d066c7d</td></tr>
-<tr>
-<td title='test.NoteTest.deleteNote()'><b>deleteNote</b><br>Test class: test.NoteTest</td>
-<td></td>
-<td>4</td>
-<td>test.NoteTest@61544ae6</td></tr>
+<td>test.ProjectTest@1e461e41</td></tr>
 <tr>
 <td title='test.NoteTest.updateNote()'><b>updateNote</b><br>Test class: test.NoteTest</td>
 <td></td>
-<td>4</td>
-<td>test.NoteTest@61544ae6</td></tr>
-<tr>
-<td title='test.NoteTest.search()'><b>search</b><br>Test class: test.NoteTest</td>
-<td></td>
 <td>2</td>
-<td>test.NoteTest@61544ae6</td></tr>
+<td>test.NoteTest@4b41dd5c</td></tr>
+<tr>
+<td title='test.NoteTest.deleteNote()'><b>deleteNote</b><br>Test class: test.NoteTest</td>
+<td></td>
+<td>3</td>
+<td>test.NoteTest@4b41dd5c</td></tr>
+<tr>
+<td title='test.EstimateTest.searchEstimate()'><b>searchEstimate</b><br>Test class: test.EstimateTest</td>
+<td></td>
+<td>1</td>
+<td>test.EstimateTest@5ba88be8</td></tr>
 <tr>
 <td title='test.ProjectTest.updateProject()'><b>updateProject</b><br>Test class: test.ProjectTest</td>
 <td></td>
 <td>3</td>
-<td>test.ProjectTest@5d066c7d</td></tr>
+<td>test.ProjectTest@1e461e41</td></tr>
 <tr>
-<td title='test.NoteTest.verifyNote()'><b>verifyNote</b><br>Test class: test.NoteTest</td>
+<td title='test.EstimateTest.verifyEstimate()'><b>verifyEstimate</b><br>Test class: test.EstimateTest</td>
 <td></td>
 <td>3</td>
-<td>test.NoteTest@61544ae6</td></tr>
-<tr>
-<td title='test.ProjectTest.verifyProject()'><b>verifyProject</b><br>Test class: test.ProjectTest</td>
-<td></td>
-<td>5</td>
-<td>test.ProjectTest@5d066c7d</td></tr>
+<td>test.EstimateTest@5ba88be8</td></tr>
 <tr>
 <td title='test.LoginTest.login()'><b>login</b><br>Test class: test.LoginTest<br>Parameters: admin@admin.com, 12345678</td>
 <td></td>
 <td>1</td>
-<td>test.LoginTest@5b6ec132</td></tr>
+<td>test.LoginTest@5c44c582</td></tr>
 <tr>
-<td title='test.ProjectTest.deleteProject()'><b>deleteProject</b><br>Test class: test.ProjectTest</td>
+<td title='test.ProjectTest.search()'><b>search</b><br>Test class: test.ProjectTest</td>
 <td></td>
-<td>4</td>
-<td>test.ProjectTest@5d066c7d</td></tr>
+<td>1</td>
+<td>test.ProjectTest@1e461e41</td></tr>
+<tr>
+<td title='test.NoteTest.verifyNote()'><b>verifyNote</b><br>Test class: test.NoteTest</td>
+<td></td>
+<td>3</td>
+<td>test.NoteTest@4b41dd5c</td></tr>
 </table><p>
 </body>
 </html>

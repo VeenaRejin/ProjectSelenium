@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-25T19:30:21 IST" name="Default suite" finished-at="2024-01-25T19:30:34 IST" duration-ms="12639">
+  <suite started-at="2024-01-26T21:09:43 IST" name="Suite" finished-at="2024-01-26T21:10:39 IST" duration-ms="56164">
     <groups>
+      <group name="regression">
+        <method signature="NoteTest.deleteNote()[pri:4, instance:test.NoteTest@4b41dd5c]" name="deleteNote" class="test.NoteTest"/>
+        <method signature="NoteTest.search()[pri:2, instance:test.NoteTest@4b41dd5c]" name="search" class="test.NoteTest"/>
+        <method signature="NoteTest.updateNote()[pri:3, instance:test.NoteTest@4b41dd5c]" name="updateNote" class="test.NoteTest"/>
+        <method signature="NoteTest.verifyNote()[pri:1, instance:test.NoteTest@4b41dd5c]" name="verifyNote" class="test.NoteTest"/>
+        <method signature="ProjectTest.deleteProject()[pri:4, instance:test.ProjectTest@1e461e41]" name="deleteProject" class="test.ProjectTest"/>
+        <method signature="ProjectTest.search()[pri:2, instance:test.ProjectTest@1e461e41]" name="search" class="test.ProjectTest"/>
+        <method signature="ProjectTest.updateProject()[pri:3, instance:test.ProjectTest@1e461e41]" name="updateProject" class="test.ProjectTest"/>
+        <method signature="ProjectTest.verifyProject()[pri:1, instance:test.ProjectTest@1e461e41]" name="verifyProject" class="test.ProjectTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="NoteTest.search()[pri:2, instance:test.NoteTest@4b41dd5c]" name="search" class="test.NoteTest"/>
+        <method signature="NoteTest.updateNote()[pri:3, instance:test.NoteTest@4b41dd5c]" name="updateNote" class="test.NoteTest"/>
+        <method signature="NoteTest.verifyNote()[pri:1, instance:test.NoteTest@4b41dd5c]" name="verifyNote" class="test.NoteTest"/>
+        <method signature="ProjectTest.search()[pri:2, instance:test.ProjectTest@1e461e41]" name="search" class="test.ProjectTest"/>
+        <method signature="ProjectTest.updateProject()[pri:3, instance:test.ProjectTest@1e461e41]" name="updateProject" class="test.ProjectTest"/>
+        <method signature="ProjectTest.verifyProject()[pri:1, instance:test.ProjectTest@1e461e41]" name="verifyProject" class="test.ProjectTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-01-25T19:30:21 IST" name="Default test" finished-at="2024-01-25T19:30:34 IST" duration-ms="12639">
-      <class name="test.EstimateTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:21 IST" name="setUp" finished-at="2024-01-25T19:30:25 IST" duration-ms="3311" status="PASS">
+    <test started-at="2024-01-26T21:09:43 IST" name="Test" finished-at="2024-01-26T21:10:39 IST" duration-ms="56164">
+      <class name="test.ProjectTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:08 IST" name="setUp" finished-at="2024-01-26T21:10:10 IST" duration-ms="2352" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +36,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyEstimate()[pri:1, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:25 IST" name="verifyEstimate" finished-at="2024-01-25T19:30:29 IST" duration-ms="4225" status="PASS">
+        <test-method signature="verifyProject()[pri:1, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:10 IST" name="verifyProject" finished-at="2024-01-26T21:10:13 IST" duration-ms="2850" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEstimate -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:29 IST" name="afterMethod" finished-at="2024-01-25T19:30:29 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:13 IST" name="afterMethod" finished-at="2024-01-26T21:10:14 IST" duration-ms="187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyEstimate status=SUCCESS method=EstimateTest.verifyEstimate()[pri:1, instance:test.EstimateTest@25fb8912] output={null}]]]>
+                <![CDATA[[TestResult name=verifyProject status=SUCCESS method=ProjectTest.verifyProject()[pri:1, instance:test.ProjectTest@1e461e41] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:29 IST" name="setUp" finished-at="2024-01-25T19:30:32 IST" duration-ms="3148" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:14 IST" name="setUp" finished-at="2024-01-26T21:10:16 IST" duration-ms="2267" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,15 +62,237 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchEstimate()[pri:2, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:32 IST" name="searchEstimate" finished-at="2024-01-25T19:30:34 IST" duration-ms="1919" status="PASS">
+        <test-method signature="search()[pri:2, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:16 IST" name="search" finished-at="2024-01-26T21:10:17 IST" duration-ms="1583" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchEstimate -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.EstimateTest@25fb8912]" started-at="2024-01-25T19:30:34 IST" name="afterMethod" finished-at="2024-01-25T19:30:34 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:17 IST" name="afterMethod" finished-at="2024-01-26T21:10:18 IST" duration-ms="171" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchEstimate status=SUCCESS method=EstimateTest.searchEstimate()[pri:2, instance:test.EstimateTest@25fb8912] output={null}]]]>
+                <![CDATA[[TestResult name=search status=SUCCESS method=ProjectTest.search()[pri:2, instance:test.ProjectTest@1e461e41] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:18 IST" name="setUp" finished-at="2024-01-26T21:10:20 IST" duration-ms="2054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="updateProject()[pri:3, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:20 IST" name="updateProject" finished-at="2024-01-26T21:10:23 IST" duration-ms="3130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:23 IST" name="afterMethod" finished-at="2024-01-26T21:10:23 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateProject status=SUCCESS method=ProjectTest.updateProject()[pri:3, instance:test.ProjectTest@1e461e41] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:23 IST" name="setUp" finished-at="2024-01-26T21:10:25 IST" duration-ms="2442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteProject()[pri:4, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:25 IST" name="deleteProject" finished-at="2024-01-26T21:10:29 IST" duration-ms="3284" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.225)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9035f355ed1c1ef242a025bc662b8a61, getElementText {id=3096A6BE1CD3CEC980A4359AC8936C5B_element_2366}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\VEENAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60931/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9035f355ed1c1ef242a025bc662b8a61)] -> xpath: //table[@id='project-table']//tbody//tr[1]//td[1]]
+Session ID: 9035f355ed1c1ef242a025bc662b8a61]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.225)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9035f355ed1c1ef242a025bc662b8a61, getElementText {id=3096A6BE1CD3CEC980A4359AC8936C5B_element_2366}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\VEENAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60931/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9035f355ed1c1ef242a025bc662b8a61)] -> xpath: //table[@id='project-table']//tbody//tr[1]//td[1]]
+Session ID: 9035f355ed1c1ef242a025bc662b8a61
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy20.getText(Unknown Source)
+at page.ProjectPage.dodelete(ProjectPage.java:158)
+at test.ProjectTest.deleteProject(ProjectTest.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectTest@1e461e41]" started-at="2024-01-26T21:10:29 IST" name="afterMethod" finished-at="2024-01-26T21:10:29 IST" duration-ms="388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteProject status=FAILURE method=ProjectTest.deleteProject()[pri:4, instance:test.ProjectTest@1e461e41] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.ProjectTest -->
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.LoginTest@5c44c582]" started-at="2024-01-26T21:09:43 IST" name="setUp" finished-at="2024-01-26T21:09:47 IST" duration-ms="3647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@5c44c582]" started-at="2024-01-26T21:09:47 IST" name="login" data-provider="dp" finished-at="2024-01-26T21:09:48 IST" duration-ms="1178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.LoginTest@5c44c582]" started-at="2024-01-26T21:09:48 IST" name="afterMethod" finished-at="2024-01-26T21:09:48 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTest.login(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@5c44c582] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.LoginTest -->
+      <class name="test.EstimateTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.EstimateTest@5ba88be8]" started-at="2024-01-26T21:10:29 IST" name="setUp" finished-at="2024-01-26T21:10:31 IST" duration-ms="2373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyEstimate()[pri:1, instance:test.EstimateTest@5ba88be8]" started-at="2024-01-26T21:10:31 IST" name="verifyEstimate" finished-at="2024-01-26T21:10:35 IST" duration-ms="3176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEstimate -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.EstimateTest@5ba88be8]" started-at="2024-01-26T21:10:35 IST" name="afterMethod" finished-at="2024-01-26T21:10:35 IST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEstimate status=SUCCESS method=EstimateTest.verifyEstimate()[pri:1, instance:test.EstimateTest@5ba88be8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.EstimateTest@5ba88be8]" started-at="2024-01-26T21:10:35 IST" name="setUp" finished-at="2024-01-26T21:10:37 IST" duration-ms="2137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchEstimate()[pri:2, instance:test.EstimateTest@5ba88be8]" started-at="2024-01-26T21:10:37 IST" name="searchEstimate" finished-at="2024-01-26T21:10:39 IST" duration-ms="1571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEstimate -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.EstimateTest@5ba88be8]" started-at="2024-01-26T21:10:39 IST" name="afterMethod" finished-at="2024-01-26T21:10:39 IST" duration-ms="184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchEstimate status=SUCCESS method=EstimateTest.searchEstimate()[pri:2, instance:test.EstimateTest@5ba88be8] output={null}]]]>
               </value>
             </param>
           </params>
@@ -60,6 +300,112 @@
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- test.EstimateTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="test.NoteTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:09:48 IST" name="setUp" finished-at="2024-01-26T21:09:50 IST" duration-ms="2075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNote()[pri:1, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:09:50 IST" name="verifyNote" finished-at="2024-01-26T21:09:53 IST" duration-ms="3026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNote -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:09:53 IST" name="afterMethod" finished-at="2024-01-26T21:09:53 IST" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNote status=SUCCESS method=NoteTest.verifyNote()[pri:1, instance:test.NoteTest@4b41dd5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:09:53 IST" name="setUp" finished-at="2024-01-26T21:09:55 IST" duration-ms="2153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="search()[pri:2, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:09:55 IST" name="search" finished-at="2024-01-26T21:09:57 IST" duration-ms="1772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:09:57 IST" name="afterMethod" finished-at="2024-01-26T21:09:57 IST" duration-ms="184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=search status=SUCCESS method=NoteTest.search()[pri:2, instance:test.NoteTest@4b41dd5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:09:57 IST" name="setUp" finished-at="2024-01-26T21:09:59 IST" duration-ms="2107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="updateNote()[pri:3, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:09:59 IST" name="updateNote" finished-at="2024-01-26T21:10:02 IST" duration-ms="2742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateNote -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:10:02 IST" name="afterMethod" finished-at="2024-01-26T21:10:02 IST" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateNote status=SUCCESS method=NoteTest.updateNote()[pri:3, instance:test.NoteTest@4b41dd5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:10:02 IST" name="setUp" finished-at="2024-01-26T21:10:05 IST" duration-ms="2406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteNote()[pri:4, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:10:05 IST" name="deleteNote" finished-at="2024-01-26T21:10:08 IST" duration-ms="3072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNote -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.NoteTest@4b41dd5c]" started-at="2024-01-26T21:10:08 IST" name="afterMethod" finished-at="2024-01-26T21:10:08 IST" duration-ms="246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteNote status=SUCCESS method=NoteTest.deleteNote()[pri:4, instance:test.NoteTest@4b41dd5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.NoteTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

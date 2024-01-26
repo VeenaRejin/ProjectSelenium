@@ -9,6 +9,7 @@ import java.util.Properties;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import constant.Constant;
 
@@ -42,6 +43,8 @@ public class ElementUtility {
 		}
 		
 		
+		
+		
 		 public static String readPropertiesFile(String key) throws IOException {
 		      FileInputStream fis = null;
 		      Properties prop = null;
@@ -67,6 +70,7 @@ public class ElementUtility {
 		}
 		 
 		 
+		 
 		 public void scroll(WebElement element)
 		 { 
 			 
@@ -77,8 +81,7 @@ public class ElementUtility {
 		 
 		 
 		 
-
-
+		 
 		 
 		 public void estimatedate(WebElement element,String dateValue) {
 
@@ -88,6 +91,20 @@ public class ElementUtility {
 
 			}
 		 
+	
 		 
+		 
+		 public void selectRadioButton(List<WebElement> element,int index)
+		 {
+			 element.get(index).click();
+		 }
+		 
+		 
+		 
+		 public void selectDropDownByValue(WebElement element,String value)
+		 {
+			 Select sel=new Select(element);
+			 sel.selectByValue(value);
+		 }
 		 
 }
